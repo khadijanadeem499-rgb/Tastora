@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tastora · Reservations</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Flatpickr for date picker -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <i class="fas fa-utensils"></i>
+        <span>TASTORA</span>
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="reservations.html" class="active">Reservations</a></li>
+        <li class="nav-cta">
+          <a href="reservations.html" class="btn-nav">Book a Table</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-aos="fade-up">Reservations</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Secure your table for an unforgettable dining experience</p>
+      </div>
+    </section>
+
+    <!-- RESERVATION FORM -->
+    <section class="reservation-section">
+      <div class="container">
+        <div class="reservation-grid">
+          <div class="reservation-info" data-aos="fade-right">
+            <h2>Book Your Table</h2>
+            <p>We look forward to hosting you at Sapore. Please fill out the form to reserve your table, and we'll confirm within 24 hours.</p>
+            
+            <div class="info-box">
+              <h3><i class="fas fa-clock"></i> Hours</h3>
+              <ul>
+                <li><span>Mon-Thu:</span> 11:30 AM - 10:00 PM</li>
+                <li><span>Fri-Sat:</span> 11:30 AM - 11:00 PM</li>
+                <li><span>Sunday:</span> 12:00 PM - 9:00 PM</li>
+              </ul>
+            </div>
+
+            <div class="info-box">
+              <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+              <ul>
+                <li><span>Phone:</span> (212) 555-0123</li>
+                <li><span>Email:</span> reservations@sapore.com</li>
+              </ul>
+            </div>
+
+            <div class="info-box">
+              <h3><i class="fas fa-info-circle"></i> Policies</h3>
+              <ul>
+                <li>Free cancellation up to 24 hours before</li>
+                <li>Large parties (8+) please call us</li>
+                <li>Special dietary needs? Let us know</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reservation-form" data-aos="fade-left">
+            <form id="booking-form" action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="(212) 555-0123">
+                </div>
+                <div class="form-group">
+                  <label for="guests">Number of Guests *</label>
+                  <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8 People</option>
+                    <option value="9">9 People</option>
+                    <option value="10">10 People</option>
+                    <option value="11">11+ (Please call)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Reservation Date *</label>
+                  <input type="text" id="date" name="date" class="datepicker" required placeholder="Select date">
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time *</label>
+                  <select id="time" name="time" required>
+                    <option value="" disabled selected>Select time</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="17:30">5:30 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="occasion">Occasion (Optional)</label>
+                <select id="occasion" name="occasion">
+                  <option value="" disabled selected>Select if applicable</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="date">Date Night</option>
+                  <option value="business">Business Dinner</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests" rows="3" placeholder="Dietary restrictions, allergies, seating preferences..."></textarea>
+              </div>
+
+              <div class="form-group checkbox">
+                <input type="checkbox" id="updates" name="updates">
+                <label for="updates">I'd like to receive updates about special events and offers</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Request Reservation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVATE DINING -->
+    <section class="private-dining">
+      <div class="container">
+        <div class="private-dining-content" data-aos="fade-up">
+          <h2>Private Dining & Events</h2>
+          <p>Host your special occasion at Sapore. Our private dining room accommodates up to 30 guests, with customizable menus and dedicated service.</p>
+          <a href="#" class="btn btn-outline">Inquire About Events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same as index) -->
+ <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <i class="fas fa-utensils"></i>
+            <span>TASTORA</span>
+          </div>
+          <p>Authentic Italian cuisine since 1985. Every dish tells a story of tradition, passion, and love for food.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe for special offers and events</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tastora Ristorante. All rights reserved. | Designed with <i class="fas fa-heart"></i> in New York</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    // Initialize date picker
+    flatpickr(".datepicker", {
+      minDate: "today",
+      maxDate: new Date().fp_incr(60),
+      dateFormat: "F j, Y",
+      disable: [
+        function(date) {
+          return date.getDay() === 0; // disable Sundays
+        }
+      ],
+      locale: {
+        firstDayOfWeek: 1
+      }
+    });
+
+    // Mobile menu
+    document.querySelector('.mobile-menu-btn')?.addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Form submission handler
+    document.getElementById('booking-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your reservation request! We will confirm within 24 hours.');
+    });
+  </script>
+</body>
+</html>
