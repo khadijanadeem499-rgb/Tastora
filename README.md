@@ -1,4 +1,4 @@
-🍽️** Tastora **
+**🍽️ Tastora **
 
 Tastora is a modern and visually appealing food discovery website designed to explore delicious meals, restaurants, and culinary experiences. It focuses on clean UI, responsiveness, and engaging user interaction.
 
@@ -48,6 +48,6 @@ git clone https://github.com/khadijanadeem499-rgb/Tastora.git
 
 Open the project folder:
 
-cd tastora
+_cd tastora_
 Run the project:
 Open index.html in your browser
