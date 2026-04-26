@@ -1,4 +1,4 @@
-**🍽️ Tastora **
+**🍽️ Tastora**
 
 Tastora is a modern and visually appealing food discovery website designed to explore delicious meals, restaurants, and culinary experiences. It focuses on clean UI, responsiveness, and engaging user interaction.
 
