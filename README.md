@@ -1,53 +1,74 @@
-**🍽️ Tastora**
+# 🍽️ Tastora
 
-Tastora is a modern and visually appealing food discovery website designed to explore delicious meals, restaurants, and culinary experiences. It focuses on clean UI, responsiveness, and engaging user interaction.
+**Tastora** is a modern and visually engaging food discovery website that allows users to explore delicious meals, restaurants, and unique culinary experiences.
+It emphasizes a clean user interface, responsive design, and smooth user interaction.
 
-**✨ Features**
+---
 
-**🍔 Food Showcase**
+## ✨ Features
 
-Browse a variety of food items displayed in attractive cards with images, names, and descriptions.
+### 🍔 Food Showcase
 
-**🔍 Search & Explore**
+Explore a variety of dishes presented through visually appealing cards, including images, names, and brief descriptions.
 
-Quickly find your favorite dishes using a simple and user-friendly interface.
+### 🔍 Search & Explore
 
-**📱 Responsive Design**
+Easily find your favorite meals using a simple and intuitive search experience.
 
-Fully optimized for all devices — mobile, tablet, and desktop.
+### 📱 Responsive Design
 
-**🎨 Modern UI/UX**
+Optimized for all screen sizes — mobile, tablet, and desktop — ensuring a seamless experience across devices.
 
-Clean layout, smooth animations, and visually engaging design.
+### 🎨 Modern UI/UX
 
-**🛠️ Technologies Used**
+Minimal, clean layout enhanced with smooth animations and engaging visuals.
 
-- HTML5 – Structure
-  
-- CSS3 – Styling & animations
-  
-- JavaScript (ES6) – Functionality & interactivity
-  
-**📂 Project Structure**
+---
+
+## 🛠️ Technologies Used
+
+* **HTML5** — Structure
+* **CSS3** — Styling & animations
+* **JavaScript (ES6)** — Interactivity & functionality
+
+---
+
+## 📂 Project Structure
 
 tastora/
 │── index.html
-│──  pages/
-│   └── about.html
-│   └── reservation.html
+│
+├── pages/
+│   ├── about.html
+│   ├── reservation.html
 │   └── menu.html
-│── css/
+│
+├── css/
 │   └── style.css
-│── script.js
+│
+└── script.js
 
-**🚀 Getting Started**
+---
 
-Clone the repository:
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
 
 git clone https://github.com/khadijanadeem499-rgb/Tastora.git
 
-Open the project folder:
+### 2️⃣ Navigate to the project folder
 
-_cd tastora_
-Run the project:
-Open index.html in your browser
+cd tastora
+
+### 3️⃣ Run the project
+
+Simply open **index.html** in your browser.
+
+---
+
+## 🌟 Future Improvements
+
+* Add backend for real reservations
+* Integrate food API for dynamic data
+* User login & personalization
+* Dark mode support
