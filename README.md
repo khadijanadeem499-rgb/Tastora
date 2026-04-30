@@ -37,13 +37,18 @@ Minimal, clean layout enhanced with smooth animations and engaging visuals.
 
 tastora/
 │── index.html
+
 │
 ├── pages/
+
 │   ├── about.html
+
 │   ├── reservation.html
+
 │   └── menu.html
 │
 ├── css/
+
 │   └── style.css
 │
 └── script.js
